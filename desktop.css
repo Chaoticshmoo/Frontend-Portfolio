@@ -1,0 +1,147 @@
+/* Desktop Version */
+
+@media (min-width: 65rem) {
+    
+    /* Navigation - Desktop */
+    /* The orange dot located on the left side of the screen */
+    #hamburger-container { 
+        position: fixed;
+        top: var(--circle-location);
+        left: var(--circle-location);
+        width: var(--circle-size);
+        height: var(--circle-size);
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        z-index: var(--top-layer);
+        box-shadow: 2px 2px 5px 0px var(--shadow-color);
+    }
+
+    /* The three lines that remain in the orange dot */
+    #hamburger-line-container {
+        height: 1.5em;
+        width: 1.3em;
+        position: absolute;
+        top: var(--hamburger-line-desktop-location);
+        left: var(--hamburger-line-desktop-location);
+    }
+
+    /* The main container for the navigation menu and hamburger container (the orange dot) */
+    .header-container {
+        position: fixed;
+        top: calc(var(--desktop-circle-location) - 3.5em);
+        left: var(--desktop-circle-location);
+        width: var(--desktop-circle-size);
+        height: var(--desktop-circle-size);
+        border-radius: 50%;
+        overflow: hidden;
+        background: var(--nav-menu-bg-alpha);
+        z-index: var(--middle-layer);
+        opacity: 0.5;
+        transform: scale(0, 0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .header-container.show-menu {
+        transform: scale(1, 1);
+        opacity: 1;
+        transform-origin: top left;
+    }
+
+    /* The navigation menu links */
+    .menu-items {
+        position: relative;
+        top: -8.5em;
+        left: 0;
+        letter-spacing: 0.1rem;
+        z-index: var(--top-mid-layer);
+        opacity: 0;
+        transform: rotate(-90deg);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .menu-items li {
+        margin-top: 3em;
+    }
+
+    .menu-items li:nth-of-type(1) {
+        margin-left: 16em;
+    }
+    
+    .menu-items li:nth-of-type(2) {
+        margin-left: 12em;
+    }
+    
+    .menu-items li:nth-of-type(3) {
+        margin-left: 8em;
+    }
+    
+    .menu-items li:nth-of-type(4) {
+        margin-left: 3em;
+        padding-left: 0;
+    }
+
+    .menu-items li:first-of-type {
+        margin-top: 0;
+    }
+
+    .menu-items.show-menu {
+        opacity: 1;
+        padding-left: 24em;
+        transform: rotate(0deg);
+        transform-origin: top left;
+    }
+
+    /* Social media menu items */
+    .social-media-icons {
+        display: block;
+        position: relative;
+        padding-left: 12em;
+        padding-top: 30em;
+        max-width: 10%;
+        z-index: var(--top-layer);
+        opacity: 0;
+        transform: scale(0, 0);
+        transition: all 0.7s ease-in-out;
+    }
+    
+    .social-media-icons a {
+        color: var(--white-font-color);
+    }
+
+    .social-media-icons li {
+        font-size: 2rem;
+        list-style-type: none;
+        margin-top: 0.5em;
+        
+    }
+
+    .social-media-icons li:first-of-type {
+        margin-top: 0;
+    }
+
+    .social-media-icons li:nth-of-type(1) {
+        margin-left: 10.5em;
+    }
+    
+    .social-media-icons li:nth-of-type(2) {
+        margin-left: 9em;
+    }
+    
+    .social-media-icons li:nth-of-type(3) {
+        margin-left: 7.5em;
+    }
+
+    .social-media-icons.show-menu {
+        opacity: 1;
+        padding-left: 12em;
+        transform: scale(1, 1);
+        transform-origin: top left;
+    }
+
+
+     /* The main sections of the page that has all the general information. */
+     .main-container {
+        width: 100%;
+        z-index: var(--lower-layer);
+    }
+}

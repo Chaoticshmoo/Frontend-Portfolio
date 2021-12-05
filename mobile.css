@@ -1,0 +1,227 @@
+*, html, body {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat",  sans-serif;
+    vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Orbitron", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-font-color);
+    text-transform: uppercase;
+}
+
+/* Navigation - Mobile - visuals to show where to access the navigation menu. */
+
+#hamburger-container {
+    position: fixed;
+    bottom: var(--circle-location);
+    left: var(--circle-location);
+	width: var(--circle-size);
+	height: var(--circle-size);
+	background-color: var(--accent-color);
+    border-radius: 50%;
+    z-index: var(--top-layer);
+    box-shadow: 2px 2px 5px 0px var(--shadow-color);
+    cursor: pointer;
+}
+
+#hamburger-line-container {
+    position: absolute;
+    bottom: var(--hamburger-line-location);
+    left: var(--hamburger-line-location);
+}
+
+.hamburger-lines {
+	display: block;
+	background-color: var(--black-font-color);
+	width: 1.3rem;
+	height: 4px;
+	margin: 0.2rem 0;
+    border-radius: 2px;
+
+}
+
+#hamburger-line-1, #hamburger-line-2, #hamburger-line-3 {
+    transform: rotate(0deg);
+    transition: all 0.7s ease-in-out;
+}
+
+#hamburger-line-1.show-menu {
+    transform: rotate(45deg);
+    transform-origin: left;
+}
+
+#hamburger-line-2.show-menu {
+    opacity: 0;
+}
+
+#hamburger-line-3.show-menu {
+    transform: rotate(-45deg);
+    transform-origin: left;
+}
+
+.header-container {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Navigation - Mobile - The navigation items that are hidden behind the main content. They are revealed when the hamburger button is clicked. */
+
+.menu-items, .social-media-items {
+    position: fixed;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 0.1rem;
+    z-index: var(--lower-layer);
+}
+
+.menu-items {
+    bottom: -10em;
+    left: 1em;
+
+}
+
+.social-media-items {
+    bottom: 6em;
+    right: -10em;
+    text-align: right;
+}
+
+.menu-items li, .social-media-items li {
+    list-style-type: none;
+    margin-top: 2.5em;
+}
+
+.menu-items.show-menu {
+    opacity: 1;
+    bottom: 6em;
+}
+
+.social-media-items.show-menu {
+    opacity: 1;
+    right: 1em;
+}
+
+.social-media-items li:first-of-type {
+    margin-top: 1em;
+}
+
+.social-media-icons {
+    display: none;
+}
+
+/* Main Content */
+
+#body-container {
+	background-color: var(--nav-menu-bg);
+}
+
+.main-container {
+    background: var(--main-content-bg);
+    width: 100vw;
+    min-height: 100vh;
+    z-index: var(--middle-layer);
+    transform: rotate(0deg) translateX(0) translateY(0);
+    transform-origin: bottom left;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-container.show-menu {
+    transform: rotate(-90deg) translateX(-20em) translateY(-20em);
+    border-radius: 10px;
+}
+
+#intro {
+    background: var(--white-font-color);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 95%);
+    padding: 3rem 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#intro h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+#intro p {
+    font-size: 1rem;
+    padding: 0.8rem;
+    line-height: 1.5rem;
+}
+
+#projects-btn {
+    margin: 1rem 0;
+    padding: 0.8rem 1rem;
+    border-radius: 20px;
+    background: var(--accent-color);
+    color: var(--white-font-color);
+    letter-spacing: 0.1rem;
+    box-shadow: 2px 2px 5px 0px var(--shadow-color);
+}
+
+.section-title {
+    color: var(--white-font-color);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+    border-bottom: 2px solid var(--white-font-color);
+}
+
+/* Projects Section */
+
+#projects-section h3 {
+    text-align: center;
+    margin: 2rem;
+}
+
+/* Contact Section */
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#social-media-contact-section {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#social-media-contact-section li {
+    list-style-type: none;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer Section */
+
+#footer-section {
+    padding: 3rem 0 5rem 0;
+    text-align: center;
+    font-size: 0.8rem;
+    
+}
+
+#footer-section i {
+    font-size: 0.65rem;
+}

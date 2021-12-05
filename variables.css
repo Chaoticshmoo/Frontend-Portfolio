@@ -1,0 +1,35 @@
+/* Variables */
+
+:root {
+    /* Mobile menu variables */
+    --menu-items-position: 1rem;
+    --social-media-items-position: 1rem;
+    --screen-width-calc-menu-items: calc(100vw * 0.015);
+    --screen-width-calc-social-media: calc(100vw * 0.020);
+
+    /* Color variables */
+    --accent-color: hsl(33, 100%, 50%);
+    --white-font-color: hsl(0, 0%, 100%);
+    --black-font-color: hsl(0, 0%, 0%);
+    --shadow-color: hsla(0, 0%, 0%, 0.4);
+    --main-content-bg: hsl(210, 58%, 49%);
+    --nav-menu-bg: hsl(210, 12%, 12%);
+    --nav-menu-bg-alpha: hsla(210, 12%, 12%, 0.9);
+
+    /* Circle menu variables */
+    --circle-size: 10rem;
+    --circle-location: -5rem;
+    --desktop-circle-size: 50em;
+    --desktop-circle-location: -25em;
+
+    /* Hamburger lines variables */
+    --hamburger-line-location: 6.2em;
+    --hamburger-line-desktop-location: 6.2em;
+
+    /* Layer Variables */
+    --top-layer: 1000;
+    --top-mid-layer: 750;
+    --middle-layer: 500;
+    --lower-layer: 100;
+    --base-layer: 0;
+}
