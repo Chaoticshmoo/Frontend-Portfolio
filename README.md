@@ -1,2 +1,2 @@
 # Frontend-Portfolio
-Alexander Foerster's front end portfolio.
+Alexander Foerster's frontend portfolio.
