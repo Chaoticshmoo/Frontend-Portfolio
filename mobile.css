@@ -51,7 +51,7 @@ a {
 
 #hamburger-line-1, #hamburger-line-2, #hamburger-line-3 {
     transform: rotate(0deg);
-    transition: all 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 #hamburger-line-1.show-menu {
@@ -81,7 +81,7 @@ a {
 .menu-items, .social-media-items {
     position: fixed;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-speed-menu) ease-in-out;
     letter-spacing: 0.1rem;
     z-index: var(--lower-layer);
 }
@@ -134,7 +134,7 @@ a {
     z-index: var(--middle-layer);
     transform: rotate(0deg) translateX(0) translateY(0);
     transform-origin: bottom left;
-    transition: all 0.3s ease-in-out;
+    transition: all var(--transition-speed-menu) ease-in-out;
 }
 
 .main-container.show-menu {

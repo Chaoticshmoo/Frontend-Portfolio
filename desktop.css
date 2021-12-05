@@ -152,7 +152,7 @@
         font-weight: 400;
         text-align: start;
         margin: 20rem 0;
-        padding: 0 0 0.2rem 6rem;
+        padding: 0 0 0.5rem 6rem;
         width: 55%;
         border-bottom: 2px solid var(--accent-color);
         box-shadow: -8px 4px 5px var(--shadow-color-faint);

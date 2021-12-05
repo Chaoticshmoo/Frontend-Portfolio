@@ -6,6 +6,7 @@
     --social-media-items-position: 1rem;
     --screen-width-calc-menu-items: calc(100vw * 0.015);
     --screen-width-calc-social-media: calc(100vw * 0.020);
+    --transition-speed-menu: 0.5s;
 
     /* Color variables */
     --accent-color: hsl(33, 100%, 50%);
