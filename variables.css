@@ -12,6 +12,7 @@
     --white-font-color: hsl(0, 0%, 100%);
     --black-font-color: hsl(0, 0%, 0%);
     --shadow-color: hsla(0, 0%, 0%, 0.4);
+    --shadow-color-faint: hsla(0, 0%, 0%, 0.2);
     --main-content-bg: hsl(210, 58%, 49%);
     --nav-menu-bg: hsl(210, 12%, 12%);
     --nav-menu-bg-alpha: hsla(210, 12%, 12%, 0.9);

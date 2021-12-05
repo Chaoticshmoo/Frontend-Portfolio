@@ -144,4 +144,41 @@
         width: 100%;
         z-index: var(--lower-layer);
     }
+
+    .section-title {
+        position: relative;
+        color: var(--white-font-color);
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: start;
+        margin: 20rem 0;
+        padding: 0 0 0.2rem 6rem;
+        width: 55%;
+        border-bottom: 2px solid var(--accent-color);
+        box-shadow: -8px 4px 5px var(--shadow-color-faint);
+    }
+
+    .section-title:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: var(--circle-location);
+        left: var(--circle-location);
+        border-radius: 50%;
+        width: var(--circle-size);
+        height: var(--circle-size);
+        background: var(--accent-color);
+        box-shadow: 0px 4px 5px 0px var(--shadow-color-faint);
+    }
+
+    /* Contact section */
+
+    #contact-section .section-title{
+        align-self: flex-start;
+    }
+    
+    #social-media-contact-section li{
+        display: inline-block;
+        margin: 1rem 5rem;
+    }
 }
