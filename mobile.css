@@ -141,7 +141,7 @@ button {
 
 .main-container {
     background: var(--main-content-bg);
-    min-width: 100vw;
+    min-width: 100%;
     min-height: 100vh;
     z-index: var(--middle-layer);
     transform: rotate(0deg) translateX(0) translateY(0);
