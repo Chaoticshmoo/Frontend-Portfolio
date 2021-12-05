@@ -163,7 +163,7 @@
         display: inline-block;
         position: absolute;
         bottom: var(--circle-location);
-        left: var(--circle-location);
+        left: calc(var(--circle-location) + -3rem);
         border-radius: 50%;
         width: var(--circle-size);
         height: var(--circle-size);

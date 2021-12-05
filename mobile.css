@@ -1,3 +1,10 @@
+/* Temporary Code: Delete below */
+h3 {
+    text-align: center;
+    margin: 2rem;
+}
+/* Temporary Code: Delete above */
+
 *, html, body {
     margin: 0;
 	padding: 0;
@@ -133,6 +140,7 @@ a {
     transform: rotate(0deg) translateX(0) translateY(0);
     transform-origin: bottom left;
     transition: all var(--transition-speed-menu) ease-in-out;
+    color: var(--white-font-color);
 }
 
 .main-container.show-menu {
@@ -146,10 +154,11 @@ a {
     padding: 3rem 2rem;
     margin-bottom: 4rem;
     text-align: center;
+    color: var(--black-font-color);
 }
 
 #intro h1 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 
@@ -160,10 +169,11 @@ a {
 }
 
 #projects-btn {
+    font-weight: 700;
     margin: 1rem 0;
-    padding: 0.8rem 1rem;
-    border: 2px inset var(--accent-color);
-    border-radius: 20px;
+    padding: 1rem 2rem;
+    border: 1px outset var(--white-font-color);
+    border-radius: 15px;
     background: var(--accent-color);
     color: var(--white-font-color);
     letter-spacing: 0.1rem;
@@ -171,11 +181,17 @@ a {
     cursor: pointer;
 }
 
+#projects-btn:active {
+    border: 1px inset var(--white-font-color);
+}
+
 .section-title {
     color: var(--white-font-color);
     font-size: 2rem;
     font-weight: 400;
+    text-transform: uppercase;
     text-align: center;
+    letter-spacing: 0.2rem;
     margin: auto;
     width: 75%;
     border-bottom: 2px solid var(--white-font-color);
@@ -183,10 +199,7 @@ a {
 
 /* Projects Section */
 
-#projects-section h3 {
-    text-align: center;
-    margin: 2rem;
-}
+
 
 /* Contact Section */
 
@@ -232,6 +245,7 @@ a {
 .contact-form p {
     font-size: 0.8rem;
     padding-bottom: 1rem;
+    margin: 0 1rem;
 }
 
 .contact-field {
@@ -242,6 +256,7 @@ a {
 }
 
 .contact-field input, .contact-field textarea {
+    border: 1px solid var(--nav-menu-bg-alpha);
     border-radius: 5px;
     width: 100%;
     height: 2rem;
@@ -250,24 +265,33 @@ a {
     box-shadow: 2px 2px 5px 0px var(--shadow-color);
 }
 
+.contact-field label {
+    margin-left: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
 #message {
     height: 5rem;
     padding: 1rem;
 }
 
 #contact-send-btn {
-    width: 50%;
+    width: 40%;
     height: 3rem;
     margin: auto;
     background: var(--accent-color);
     color: var(--white-font-color);
     font-weight: 700;
+    border: 1px outset var(--white-font-color);
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px var(--shadow-color);
     cursor: pointer;
 }
 
-
+#contact-send-btn:active {
+    border: 1px inset var(--white-font-color);
+}
 
 
 /* Footer Section */
