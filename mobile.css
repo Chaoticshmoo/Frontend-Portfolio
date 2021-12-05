@@ -23,6 +23,13 @@ a {
     text-transform: uppercase;
 }
 
+button {
+    border: 1px outset var(--white-font-color);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px var(--shadow-color);
+    cursor: pointer;
+}
+
 /* Navigation - Mobile - visuals to show where to access the navigation menu. */
 
 #hamburger-container {
@@ -172,13 +179,10 @@ a {
     font-weight: 700;
     margin: 1rem 0;
     padding: 1rem 2rem;
-    border: 1px outset var(--white-font-color);
     border-radius: 15px;
     background: var(--accent-color);
     color: var(--white-font-color);
     letter-spacing: 0.1rem;
-    box-shadow: 2px 2px 5px 0px var(--shadow-color);
-    cursor: pointer;
 }
 
 #projects-btn:active {
@@ -194,7 +198,8 @@ a {
     letter-spacing: 0.2rem;
     margin: auto;
     width: 75%;
-    border-bottom: 2px solid var(--white-font-color);
+    text-shadow: 1px 1px 1px var(--shadow-color);
+    border-bottom: 3px ridge var(--accent-color);
 }
 
 /* Projects Section */
@@ -283,10 +288,6 @@ a {
     background: var(--accent-color);
     color: var(--white-font-color);
     font-weight: 700;
-    border: 1px outset var(--white-font-color);
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px 0px var(--shadow-color);
-    cursor: pointer;
 }
 
 #contact-send-btn:active {
@@ -297,10 +298,12 @@ a {
 /* Footer Section */
 
 #footer-section {
-    padding: 3rem 0 5rem 0;
+    margin-top: 4rem;
+    padding: 1rem 0;
     text-align: center;
     font-size: 0.8rem;
-    
+    border-top: 2px ridge var(--accent-color);
+    background-color: var(--nav-menu-bg-alpha);
 }
 
 #footer-section i {
