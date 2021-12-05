@@ -1,11 +1,9 @@
 *, html, body {
     margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
     box-sizing: border-box;
     font-family: "Montserrat",  sans-serif;
-    vertical-align: baseline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -129,7 +127,7 @@ a {
 
 .main-container {
     background: var(--main-content-bg);
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     z-index: var(--middle-layer);
     transform: rotate(0deg) translateX(0) translateY(0);
@@ -164,11 +162,13 @@ a {
 #projects-btn {
     margin: 1rem 0;
     padding: 0.8rem 1rem;
+    border: 2px inset var(--accent-color);
     border-radius: 20px;
     background: var(--accent-color);
     color: var(--white-font-color);
     letter-spacing: 0.1rem;
     box-shadow: 2px 2px 5px 0px var(--shadow-color);
+    cursor: pointer;
 }
 
 .section-title {
@@ -190,12 +190,7 @@ a {
 
 /* Contact Section */
 
-#contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* Contact Social Media */
 
 #social-media-contact-section {
     font-size: 1.2rem;
@@ -208,10 +203,72 @@ a {
     letter-spacing: 0.1rem;
 }
 
-#contact-form {
+/* Contact Form */
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.contact-form {
     display: flex;
     flex-direction: column;
 }
+
+.contact-form {
+    width: 80%;
+}
+
+.contact-form p {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.contact-field input, .contact-field textarea {
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    margin: 0.2rem 0 1rem;
+    width: 100%;
+    box-shadow: 2px 2px 5px 0px var(--shadow-color);
+}
+
+#message {
+    height: 5rem;
+    padding: 1rem;
+}
+
+#contact-send-btn {
+    width: 50%;
+    height: 3rem;
+    margin: auto;
+    background: var(--accent-color);
+    color: var(--white-font-color);
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px var(--shadow-color);
+    cursor: pointer;
+}
+
+
+
 
 /* Footer Section */
 

@@ -68,7 +68,7 @@
         <section id="intro">
             <h1>Hello, I'm Alexander.</h1>
             <p>A frontend web developer from Portland, Oregon. I love to design and code wonderful things.</p>
-            <a href="#projects-section"><button id="projects-btn">Portfolio</button></a>
+            <a href="#projects-section"><button id="projects-btn">Projects</button></a>
         </section>
         <section id="projects-section">
             <h2 class="section-title">Projects</h2>
@@ -91,20 +91,21 @@
             </article>
             <article id="contact-info">
                 <form action="" method="get" class="contact-form">
-                    <div class="contact-email">
-                        <label for="email">Email</label>
+                    <div class="contact-email contact-field">
+                        <label for="email">Email*</label>
                         <input type="email" name="email" id="email" required>
                     </div>
-                    <div class="contact-name">
-                        <label for="name">Name</label>
+                    <div class="contact-name contact-field">
+                        <label for="name">Name*</label>
                         <input type="text" name="name" id="name" required>
                     </div>
-                    <div class="contact-message">
-                        <label for="message">Message</label>
-                        <input type="text" name="message" id="message" required>
+                    <div class="contact-message contact-field">
+                        <label for="message">Message*</label>
+                        <textarea type="text" name="message" id="message" required></textarea>
                     </div>
-                    <div class="contact-send-btn">
-                        <input type="submit" value="Send">
+                    <p>*Required</p>
+                    <div class="contact-field">
+                        <button type="submit" id="contact-send-btn">Send</button>
                     </div>
                 </form>
             </article>
