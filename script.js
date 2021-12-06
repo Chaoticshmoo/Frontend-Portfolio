@@ -2,6 +2,8 @@
 
 // Site's Navigation
 
+const mobileView = 719 // Global variable to determine if the window is small enough for mobile or larger for desktop view settings. It is used in showMenu and isMobileView functions.
+
 /* Shows/hides the nav and social media menus whenever the hamburger button is clicked. It does such by rotating the main container of content off to the side as the menu's slide/fade into view. When the hamburger menu is clicked a second time the process reverts itself. */
 function showMenu() {
 	const hamburgerContainer = document.querySelector("#hamburger-container")
@@ -14,7 +16,6 @@ function showMenu() {
 	hamburgerContainer.addEventListener("click", function() {
 		hamburgerContainer.classList.toggle("show-menu")
 		menuItems.classList.toggle("show-menu")
-		const mobileView = 1040
 		if (window.innerWidth < mobileView) {
 			mainContainer.classList.toggle("show-menu")
 			socialMediaMenu.classList.toggle("show-menu")
@@ -31,7 +32,6 @@ function showMenu() {
 /* Adds the nav-menu class to the main-container element if the window size is in mobile view. This is needed because the main-container element is only part of the navigation menu while in mobile view. This is also done by using the nav-menu class.*/
 function isMobileView() {
 	const mainContainer = document.querySelector(".main-container")
-	const mobileView = 1040
 	if (window.innerWidth < mobileView) {
 		mainContainer.classList.add("nav-menu")
 	}

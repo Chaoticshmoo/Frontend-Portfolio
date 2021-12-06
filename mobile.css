@@ -89,7 +89,7 @@ button {
     width: 100%;
 }
 
-/* Navigation - Mobile - The navigation items that are hidden behind the main content. They are revealed when the hamburger button is clicked. */
+/* Navigation - The navigation items that are hidden behind the main content. They are revealed when the hamburger button is clicked. */
 
 .menu-items, .social-media-items {
     position: fixed;
@@ -132,6 +132,14 @@ button {
 
 .social-media-icons {
     display: none;
+}
+
+.nav-menu a {
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: var(--accent-color);
 }
 
 /* Main Content */
@@ -233,13 +241,25 @@ button {
     align-items: center;
 }
 
+#social-media-contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 3rem;
+}
+
+#social-media-contact-section a {
+    padding: 1rem;
+}
+
 #contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
 
 .contact-form {
     display: flex;
