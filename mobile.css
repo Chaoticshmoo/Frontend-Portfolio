@@ -14,7 +14,7 @@ h3 {
 *:focus {
     outline: 2px solid orange;
     border-radius: 5px;
-    padding: 0.5rem;
+    padding: 0.5rem;    
 }
 
 *, html, body {
@@ -319,7 +319,7 @@ button {
 #contact-send-btn {
     width: 40%;
     height: 3rem;
-    margin: auto;
+    margin: 1rem auto;
     background: var(--accent-color);
     color: var(--white-font-color);
     font-weight: 700;
