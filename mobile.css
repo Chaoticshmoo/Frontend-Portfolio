@@ -28,6 +28,7 @@ button {
     border-radius: 10px;
     box-shadow: 2px 2px 5px 0px var(--shadow-color);
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
 }
 
 /* Navigation - Mobile - visuals to show where to access the navigation menu. */
@@ -204,6 +205,8 @@ button {
 
 /* Projects Section */
 
+
+/* Resume Section */
 
 
 /* Contact Section */

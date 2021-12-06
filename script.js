@@ -63,6 +63,23 @@ window.onclick = function isClickOutsideNavMenu(event) {
 	}
 }
 
-showMenu()
-
 // Site's Main Container: Projects, Resume, and Get in Touch secions
+
+// Button Behavior: Tells buttons to change based on what the user is doing.
+function buttonControl() {
+	const hoverColor = "hsl(210, 12%, 12%)"
+	const originalColor = "hsl(33, 100%, 50%)"
+	const btns = document.querySelectorAll("button")
+	for (let i = 0; i < btns.length; i++) {
+		const allBtns = btns[i]
+		allBtns.addEventListener("mouseover", function(event) {
+			event.target.style.backgroundColor = hoverColor
+		})
+		allBtns.addEventListener("mouseout", function(event) {
+			event.target.style.backgroundColor = originalColor
+		})
+	}
+}
+
+showMenu()
+buttonControl()
