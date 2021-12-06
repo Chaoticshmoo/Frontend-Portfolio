@@ -11,12 +11,18 @@ h3 {
 }
 /* Temporary Code: Delete above */
 
+*:focus {
+    outline: 2px solid orange;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
 *, html, body {
     margin: 0;
 	padding: 0;
 	font-size: 100%;
     box-sizing: border-box;
-    font-family: "Montserrat",  sans-serif;
+    font-family: "Montserrat",  sans-serif; 
 }
 
 h1, h2, h3, h4, h5, h6 {

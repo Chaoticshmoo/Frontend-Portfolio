@@ -156,6 +156,10 @@
         width: 45%;
     }
 
+    .information-section {
+        overflow: hidden;
+    }
+
     .information-section:nth-of-type(odd) .section-title {
         box-shadow: -8px 4px 5px var(--shadow-color-faint);
     }
