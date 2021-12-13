@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--white-font-color);
 }
 
 button {
@@ -47,7 +47,7 @@ button {
     transition: all 0.5s ease-in-out;
 }
 
-/* Navigation - Mobile - visuals to show where to access the navigation menu. */
+/* Navigation - visuals to show where to access the navigation menu. */
 
 #hamburger-container {
     position: fixed;
@@ -184,20 +184,19 @@ button {
 }
 
 #intro {
-    background: var(--white-font-color);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 95%);
+    background: var(--nav-menu-bg);
     padding: 3rem 2rem;
     margin-bottom: 4rem;
     text-align: center;
-    color: var(--black-font-color);
+    color: var(--white-font-color);
 }
 
-#intro h1 {
+#greeting {
     font-size: 2.5rem;
     text-transform: uppercase;
 }
 
-#intro p {
+#introduction {
     font-size: 1rem;
     padding: 0.8rem;
     line-height: 1.5rem;
@@ -249,6 +248,10 @@ button {
     list-style-type: none;
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
+}
+
+#social-media-contact-section a:hover {
+    color: var(--white-font-color);
 }
 
 /* Contact Form */
@@ -336,6 +339,9 @@ button {
     border: 1px inset var(--black-font-color);
 }
 
+textarea {
+    resize: vertical;
+}
 
 /* Footer Section */
 

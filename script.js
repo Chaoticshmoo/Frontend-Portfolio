@@ -2,7 +2,7 @@
 
 // Site's Navigation
 
-const mobileView = 719 // Global variable to determine if the window is small enough for mobile or larger for desktop view settings. It is used in showMenu and isMobileView functions.
+const mobileView = 1039 // Global variable to determine if the window is small enough for mobile or larger for desktop view settings. It is used in showMenu and isMobileView functions.
 
 /* Shows/hides the nav and social media menus whenever the hamburger button is clicked. It does such by rotating the main container of content off to the side as the menu's slide/fade into view. When the hamburger menu is clicked a second time the process reverts itself. */
 function showMenu() {

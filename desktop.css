@@ -1,6 +1,6 @@
 /* Desktop Version */
 
-@media (min-width: 45rem) {
+@media (min-width: 65em) {
     
     /* Navigation - Desktop */
     /* The orange dot located on the left side of the screen */
@@ -140,6 +140,27 @@
 
      /* The main sections of the page that has all the general information. */
 
+    #intro {
+        clip-path: polygon(0 0, 100% 0, 100% 59%, 24% 73%, 0 49%);
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem 5rem 15rem 5rem;
+    }
+
+    #greeting {
+        font-size: 4rem;
+    }
+
+    #introduction {
+        align-self: center;
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    #greeting, #introduction {
+        padding: 1rem;
+    }
+
      .main-container {
         width: 100%;
         z-index: var(--lower-layer);
@@ -147,13 +168,17 @@
 
     .section-title {
         position: relative;
-        color: var(--white-font-color);
+        color: var(--black-font-color);
         font-size: 2rem;
         font-weight: 400;
         text-align: start;
         margin: 2rem 0;
         padding: 0 0 0.5rem 6rem;
         width: 70%;
+    }
+
+    #projects-section {
+        margin-top: -8rem;
     }
 
     .information-section {
