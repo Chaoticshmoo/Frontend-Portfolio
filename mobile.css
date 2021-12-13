@@ -263,24 +263,17 @@ button {
     align-items: center;
 }
 
-#social-media-contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    padding: 0 3rem;
-}
-
-#social-media-contact-section a {
-    padding: 1rem;
-}
-
 #contact-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+
+#contact-info p {
+    margin: 0 2rem 2rem 2rem;
+    width: 70%;
+    line-height: 1.7rem;
 }
 
 .contact-form {
@@ -341,6 +334,20 @@ button {
 
 textarea {
     resize: vertical;
+}
+
+#social-media-contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+#social-media-contact-section a {
+    padding: 1rem;
 }
 
 /* Footer Section */

@@ -140,10 +140,15 @@
 
      /* The main sections of the page that has all the general information. */
 
+     .main-container {
+        width: 100%;
+        z-index: var(--lower-layer);
+    }
+
     #intro {
         clip-path: polygon(0 0, 100% 0, 100% 59%, 24% 73%, 0 49%);
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 3rem 5rem 15rem 5rem;
     }
 
@@ -159,11 +164,6 @@
 
     #greeting, #introduction {
         padding: 1rem;
-    }
-
-     .main-container {
-        width: 100%;
-        z-index: var(--lower-layer);
     }
 
     .section-title {
@@ -238,20 +238,30 @@
     #contact-section .section-title{
         align-self: flex-start;
     }
+
+    #contact-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
     
     #social-media-contact-section {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        margin: 0 10rem;
+        width: 40%;
+        padding: 0 0rem;
     }
 
     #social-media-contact-section a {
+        margin: 0rem;
         padding: 2rem;
     }
 
     #contact-info {
-        width: 60%;
+        width: 80%;
     }
 }
