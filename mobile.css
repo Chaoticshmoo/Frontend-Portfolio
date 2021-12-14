@@ -199,21 +199,28 @@ button {
 #introduction {
     font-size: 1rem;
     padding: 0.8rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    text-align: start;
 }
 
-#projects-btn {
-    font-weight: 700;
-    margin: 1rem 0;
-    padding: 1rem 2rem;
-    border-radius: 15px;
-    background: var(--accent-color);
-    color: var(--black-font-color);
-    letter-spacing: 0.1rem;
+#interests {
+    display: inline-block;
+    position: relative;
 }
 
-#projects-btn:active {
-    border: 1px inset var(--black-font-color);
+#hobbies {
+    color: var(--accent-color);
+}
+
+#hobby-images {
+    position: absolute;
+    bottom: 5px;
+    margin-left: 0.3rem;
+    max-height: 80%;
+}
+
+#introduction p > span {
+    color: var(--accent-color);
 }
 
 .section-title {
@@ -364,4 +371,12 @@ textarea {
 
 #footer-section i {
     font-size: 0.65rem;
+}
+
+#icon8 {
+    margin-top: 0.4rem;
+}
+
+#icon8 a {
+    color: var(--accent-color);
 }

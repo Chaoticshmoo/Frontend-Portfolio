@@ -81,5 +81,31 @@ function buttonControl() {
 	}
 }
 
+// Creates a ticker that rotates through the arrays displaying them in the introduction section.
+function hobbyTicker() {
+	// The hobbies array is used to tick through each item on a timer. The hobbyImages array is appened to the end of the hobbies array.
+	const hobbies = [ "board game designer. ", "ailurophile. ", "amateur hiker. ", "creative writer. ", "gamer. " ]
+	const hobbyImages = [ "images/icons8-dice-48.png", "images/icons8-cat-50.png", "images/icons8-trekking-skin-type-1-48.png", "images/icons8-poem-48.png", "images/icons8-game-controller-48.png" ]
+	// Connects the hobbies and hobbyImages arrays together.
+	const hobbyNameElement = document.querySelector("#hobbies")
+	const hobbyImagesElement = document.querySelector("#hobby-images")
+	let hobbyIndex = 0 //Sets the start of the loop through the array items.
+	hobbyNameElement.textContent = hobbies[0] // displays the first item in the hobbies array when the page loads.
+	hobbyImagesElement.src = hobbyImages[0] // displays the first item in the hobbyImages array when the page loads.
+	function advanceHobbyTicker() {
+		++hobbyIndex
+		if (hobbyIndex >= hobbies.length) {
+			// Resets the array to loop on itself indefinitely.
+			hobbyIndex = 0
+		}
+		hobbyNameElement.textContent = hobbies[hobbyIndex] //displays the items in the hobbies array.
+		hobbyImagesElement.src = hobbyImages[hobbyIndex] // displays the items from the hobbyImages array.
+	}
+
+	// Every three seconds the arrays loop through displaying the next items.
+	setInterval(advanceHobbyTicker, 3000)
+}
+
 showMenu()
 buttonControl()
+hobbyTicker()
