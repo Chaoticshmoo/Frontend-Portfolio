@@ -25,105 +25,106 @@
 <!-- the nav-menu class connects all elements that are affected by the navigation menu. This is so they can be used in JS. -->
 
 <body id="body-container">
-    <div id="hamburger-container" class="nav-menu">
-        <div id="hamburger-line-container">
-            <span id="hamburger-line-1" class="nav-menu hamburger-lines"></span>
-            <span id="hamburger-line-2" class="nav-menu hamburger-lines"></span>
-            <span id="hamburger-line-3" class="nav-menu hamburger-lines"></span>
+    <div id="resolution-4k">
+        <div id="hamburger-container" class="nav-menu">
+            <div id="hamburger-line-container">
+                <span id="hamburger-line-1" class="nav-menu hamburger-lines"></span>
+                <span id="hamburger-line-2" class="nav-menu hamburger-lines"></span>
+                <span id="hamburger-line-3" class="nav-menu hamburger-lines"></span>
+            </div>
         </div>
-    </div>
-    <header class="nav-menu header-container">
-        <div class="nav-menu social-media-icons">
+        <header class="nav-menu header-container">
+            <div class="nav-menu social-media-icons">
+                <ul>
+                    <li><a href="https://github.com/Chaoticshmoo" target="_blank"><i class="fab fa-github-square"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/alexanderfoerster/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/ChaoticShmoo" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-menu menu-items">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#portfolio-section"><i class="fas fa-briefcase"></i> Projects</a></li>
+                    <li><a href="#resume-section"><i class="fas fa-file-alt"></i> Resume</a></li>
+                    <li><a href="#contact-section"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="nav-menu social-media-items">
             <ul>
-                <li><a href="https://github.com/Chaoticshmoo" target="_blank"><i class="fab fa-github-square"></i></a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/alexanderfoerster/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://twitter.com/ChaoticShmoo" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                </li>
+                <li><a href="https://github.com/Chaoticshmoo" target="_blank"><i class="fab fa-github-square"></i> Github</a></li>
+                <li><a href="https://www.linkedin.com/in/alexanderfoerster/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://twitter.com/ChaoticShmoo" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a></li>
             </ul>
         </div>
-        <div class="nav-menu menu-items">
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#portfolio-section"><i class="fas fa-briefcase"></i> Projects</a></li>
-                <li><a href="#resume-section"><i class="fas fa-file-alt"></i> Resume</a></li>
-                <li><a href="#contact-section"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </div>
-    </header>
-    <div class="nav-menu social-media-items">
-        <ul>
-            <li><a href="https://github.com/Chaoticshmoo" target="_blank"><i class="fab fa-github-square"></i> Github</a></li>
-            <li><a href="https://www.linkedin.com/in/alexanderfoerster/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://twitter.com/ChaoticShmoo" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a></li>
-        </ul>
+        <main class="main-container">
+            <section id="intro">
+                <article id="greeting">
+                    Howdy, I'm Alexander.
+                </article>
+                <article id="introduction">
+                    <p>I am a <span>frontend web developer</span> from Portland, Oregon who is also a
+                        <span id="interests"><span id="hobbies"></span><img id="hobby-images" src="" alt=""></span>
+                    </p>
+                </article>
+            </section>
+            <div id="main-content-wrapper">
+                <section id="resume-section" class="information-section">
+                    <h2 class="section-title">About <span class="subtitle">Get to know Alexander</span></h2>
+                    <article class="resume-content">
+                        <p>
+
+                        </p>
+                    </article>
+                </section>
+                <!-- <section id="projects-section" class="information-section">
+                    <h2 class="section-title">Projects</h2>
+                    <h3>Coming Soon!</h3>
+                    <article class="project-content">
+                    </article>
+                </section> -->
+                <section id="contact-section" class="information-section">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <div id="contact-wrapper">
+                        <article id="contact-info">
+                            <h3>Contact Form: <span class="form-status">Offline</span></h3>
+                            <p>If you are looking to say Howdy, please fill out the form below to get in touch.</p>
+                            <form action="" method="get" class="contact-form">
+                                <div class="contact-email contact-field">
+                                    <label for="email">Email*</label>
+                                    <input type="email" name="email" id="email" placeholder="What's your email?" required>
+                                </div>
+                                <div class="contact-name contact-field">
+                                    <label for="name">Name*</label>
+                                    <input type="text" name="name" id="name" placeholder="What's your name?" required>
+                                </div>
+                                <div class="contact-message contact-field">
+                                    <label for="message">Message*</label>
+                                    <textarea type="text" name="message" id="message" placeholder="What's your message?" required></textarea>
+                                </div>
+                                <p>*Required</p>
+                                <div class="contact-field">
+                                    <button type="submit" id="contact-send-btn" disabled>Send</button>
+                                </div>
+                            </form>
+                        </article>
+                        <article id="social-media-contact-section">
+                            <p>Connect with me on social.</p>
+                            <a href="https://github.com/Chaoticshmoo" target="_blank"><i class="fab fa-github-square"></i> Github</a>
+                            <a href="https://www.linkedin.com/in/alexanderfoerster/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            <a href="https://twitter.com/ChaoticShmoo" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
+                        </article>
+                    </div>
+                </section>
+            </div>
+            <footer id="footer-section">
+                <p id="copyright-info"><i class="far fa-copyright"></i> 2021 | Designed & Coded by Alexander Foerster</p>
+                <p id="icon8">Ticker icons provided by <a target="_blank" href="https://icons8.com"> Icons8</a></p>
+            </footer>
+        </main>
     </div>
-
-    <main class="main-container">
-        <section id="intro">
-            <article id="greeting">
-                Howdy, I'm Alexander.
-            </article>
-            <article id="introduction">
-                <p>I am a <span>frontend web developer</span> from Portland, Oregon who is also a
-                    <span id="interests"><span id="hobbies"></span><img id="hobby-images" src="" alt=""></span>
-                </p>
-            </article>
-        </section>
-        <div id="main-content-wrapper">
-            <section id="projects-section" class="information-section">
-                <h2 class="section-title">Projects</h2>
-                <h3>Coming Soon!</h3>
-                <article class="project-content">
-
-                </article>
-            </section>
-            <section id="resume-section" class="information-section">
-                <h2 class="section-title">Resume</h2>
-                <h3>Coming Soon!</h3>
-                <article class="resume-content">
-
-                </article>
-            </section>
-            <section id="contact-section" class="information-section">
-                <h2 class="section-title">Get in Touch</h2>
-                <div id="contact-wrapper">
-                    <article id="contact-info">
-                        <h3>Contact Form: <span class="form-status">Offline</span></h3>
-                        <p>If you are looking to say Howdy, please fill out the form below to get in touch.</p>
-                        <form action="" method="get" class="contact-form">
-                            <div class="contact-email contact-field">
-                                <label for="email">Email*</label>
-                                <input type="email" name="email" id="email" placeholder="What's your email?" required>
-                            </div>
-                            <div class="contact-name contact-field">
-                                <label for="name">Name*</label>
-                                <input type="text" name="name" id="name" placeholder="What's your name?" required>
-                            </div>
-                            <div class="contact-message contact-field">
-                                <label for="message">Message*</label>
-                                <textarea type="text" name="message" id="message" placeholder="What's your message?" required></textarea>
-                            </div>
-                            <p>*Required</p>
-                            <div class="contact-field">
-                                <button type="submit" id="contact-send-btn" disabled>Send</button>
-                            </div>
-                        </form>
-                    </article>
-                    <article id="social-media-contact-section">
-                        <p>Connect with me on social.</p>
-                        <a href="https://github.com/Chaoticshmoo" target="_blank"><i class="fab fa-github-square"></i> Github</a>
-                        <a href="https://www.linkedin.com/in/alexanderfoerster/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://twitter.com/ChaoticShmoo" target="_blank"><i class="fab fa-twitter-square"></i> Twitter</a>
-                    </article>
-                </div>
-            </section>
-        </div>
-        <footer id="footer-section">
-            <p id="copyright-info"><i class="far fa-copyright"></i> 2021 | Designed & Coded by Alexander Foerster</p>
-            <p id="icon8">Ticker icons provided by <a target="_blank" href="https://icons8.com"> Icons8</a></p>
-        </footer>
-    </main>
 </body>
 
 </html>

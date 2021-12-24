@@ -5,7 +5,7 @@
     /* Navigation - Desktop */
     /* The orange dot located on the left side of the screen */
     #hamburger-container { 
-        position: fixed;
+        position: absolute;
         top: var(--circle-location);
         left: var(--circle-location);
         width: var(--circle-size);
@@ -27,7 +27,7 @@
 
     /* The main container for the navigation menu and hamburger container (the orange dot) */
     .header-container {
-        position: fixed;
+        position: absolute;
         top: calc(var(--desktop-circle-location) - 3.5em);
         left: var(--desktop-circle-location);
         width: var(--desktop-circle-size);
@@ -147,19 +147,32 @@
 
     #intro {
         clip-path: polygon(0 0, 100% 0, 100% 59%, 24% 73%, 0 49%);
-        display: flex;
-        justify-content: space-between;
-        padding: 3rem 5rem 15rem 5rem;
+        position: relative;
+        padding-bottom: 40rem;
+        margin-top: 0;
     }
 
     #greeting {
         font-size: 4rem;
+        position: absolute;
+        top: 6rem;
+        left: 1rem;
+        width: 40%;
+        margin-right: 3rem;
     }
 
     #introduction {
-        align-self: center;
         font-size: 2rem;
         line-height: 3.5rem;
+        position: absolute;
+        top: 7rem;
+        right: 1rem;
+        width: 60%;
+        text-align: start;
+    }
+
+    #introduction p {
+        margin-left: 3rem;
     }
 
     #greeting, #introduction {
@@ -177,7 +190,7 @@
         width: 70%;
     }
 
-    #projects-section {
+    #main-content-wrapper {
         margin-top: -8rem;
     }
 
@@ -226,7 +239,7 @@
     #resume-section {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        /* align-items: flex-end; */
     }
 
     #resume-section h3 {
@@ -236,7 +249,7 @@
     /* Contact section */
 
     #contact-section .section-title{
-        align-self: flex-start;
+        align-self: flex-end;
     }
 
     #contact-wrapper {
@@ -263,5 +276,14 @@
 
     #contact-info {
         width: 80%;
+    }
+
+    @media (max-width: 240em) {
+        #resolution-4k {
+            position: relative;
+            width: 60%;
+            margin: auto;
+            overflow: hidden;
+        }
     }
 }

@@ -1,13 +1,8 @@
 /* Temporary Code: Delete below */
-h3 {
-    text-align: center;
-    margin: 2rem;
-    letter-spacing: 0.2rem;
-}
-
 .form-status {
-    color: red;
+    color: hsl(0, 98%, 23%);
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px var(--shadow-color);
 }
 /* Temporary Code: Delete above */
 
@@ -185,22 +180,24 @@ button {
 
 #intro {
     background: var(--nav-menu-bg);
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     margin-bottom: 4rem;
     text-align: center;
     color: var(--white-font-color);
+    position: relative;
 }
 
 #greeting {
     font-size: 2.5rem;
     text-transform: uppercase;
+    text-align: center;
 }
 
 #introduction {
     font-size: 1rem;
     padding: 0.8rem;
     line-height: 2rem;
-    text-align: start;
+    text-align: center;
 }
 
 #interests {
@@ -240,7 +237,10 @@ button {
 
 
 /* Resume Section */
-
+.subtitle {
+    display: block;
+    padding: 0.3rem 0 0 1rem;
+}
 
 /* Contact Section */
 
