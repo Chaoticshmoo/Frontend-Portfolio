@@ -18,6 +18,7 @@
     --main-content-bg: hsl(210, 58%, 49%);
     --nav-menu-bg: hsl(210, 12%, 12%);
     --nav-menu-bg-alpha: hsla(210, 12%, 12%, 0.9);
+    --alt-bg: hsl(242, 86%, 17%);
 
     /* Circle menu variables */
     --circle-size: 10rem;

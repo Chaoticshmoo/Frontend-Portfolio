@@ -165,7 +165,7 @@ button {
 .main-container {
     background: var(--main-content-bg);
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
     z-index: var(--middle-layer);
     transform: rotate(0deg) translateX(0) translateY(0);
     transform-origin: bottom left;
@@ -187,8 +187,9 @@ button {
     position: relative;
 }
 
-#greeting {
+#welcome-title {
     font-size: 2.5rem;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
 }
@@ -238,8 +239,7 @@ button {
 
 /* Resume Section */
 .subtitle {
-    display: block;
-    padding: 0.3rem 0 0 1rem;
+    display: none;
 }
 
 /* Contact Section */
