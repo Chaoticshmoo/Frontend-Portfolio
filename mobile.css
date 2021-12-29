@@ -248,10 +248,11 @@ button {
     padding: 2rem;
 }
 
-.about-content h3 {
-    font-size: 1.3rem;
+.about-me h3 {
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .about-me p {
