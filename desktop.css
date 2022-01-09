@@ -211,7 +211,6 @@
 
     .section-title {
         position: relative;
-        color: var(--black-font-color);
         font-size: 2rem;
         font-weight: 400;
         text-align: start;

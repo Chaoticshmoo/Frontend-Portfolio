@@ -12,10 +12,12 @@
     --accent-color: hsl(33, 100%, 50%);
     --white-font-color: hsl(0, 0%, 100%);
     --black-font-color: hsl(0, 0%, 0%);
-    --link-font-color: hsl(253, 100%, 7%);
+    --link-font-color: hsl(246, 100%, 15%);
     --shadow-color: hsla(0, 0%, 0%, 0.4);
+    --text-shadow-dark: hsla(0, 0%, 0%, 0.8);
+    --text-shadow-light: hsla(0, 0%, 100%, 0.3);
     --shadow-color-faint: hsla(0, 0%, 0%, 0.2);
-    --main-content-bg: hsl(210, 58%, 49%);
+    --main-content-bg: hsla(210, 58%, 49%, 0.884);
     --nav-menu-bg: hsl(210, 12%, 12%);
     --nav-menu-bg-alpha: hsla(210, 12%, 12%, 0.9);
     --alt-bg: hsl(242, 86%, 17%);
