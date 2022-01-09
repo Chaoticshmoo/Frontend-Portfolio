@@ -291,18 +291,15 @@
         font-size: 1.3rem;
         line-height: 2.6rem;
     }
-    
-    .portrait {
-        align-self: flex-start;
-        flex-basis: 90%;
-        margin-top: 8rem;
-        margin-bottom: 0;
-    }
 
     .portrait-img {
         width: auto;
         min-width: 40%;
         max-width: 60%;
+    }
+
+    .skills img {
+        max-width: 70%;
     }
 
     /* Contact section */

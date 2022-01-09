@@ -285,8 +285,11 @@ button {
 }
 
 .portrait {
-    text-align: center;
-    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0;
 }
 
 .portrait-img {
@@ -294,6 +297,27 @@ button {
     border: 3px ridge var(--accent-color);
     box-shadow: 2px 2px 5px 0px var(--shadow-color);
     width: 40%;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills img {
+    max-width: 60%;
+    margin: 0 1rem;
 }
 
 /* Contact Section */
@@ -411,6 +435,10 @@ textarea {
     padding: 0 3rem;
     text-align: center;
     text-shadow: 1px 1px var(--text-shadow-light);
+}
+
+#social-media-contact-section p {
+    text-shadow: 1px 1px var(--text-shadow-dark);
 }
 
 #social-media-contact-section a {
