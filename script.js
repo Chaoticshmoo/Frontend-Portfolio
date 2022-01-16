@@ -106,6 +106,10 @@ function hobbyTicker() {
 	setInterval(advanceHobbyTicker, 3000)
 }
 
+// Clears contact form inputs on submit
+let form = document.querySelector(".contact-form")
+form.reset()
+
 showMenu()
 buttonControl()
 hobbyTicker()
